@@ -8,7 +8,9 @@ This programm generate two files:
 * products.cvs is a table of products
 
 ### Before start
-./config.toml example
+Create config file in programm folder ./config.toml
+
+Example
 ```
 Login = "login"
 Password = "pwd"
