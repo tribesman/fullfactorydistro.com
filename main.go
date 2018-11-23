@@ -1,11 +1,5 @@
 package main
 
-/*
-Build for MacOS
-GOOS=darwin GOARCH=amd64  go build -o build/fullfactorydistro
-GOOS=windows GOARCH=amd64  go build -o build/fullfactorydistro_amd.exe
-*/
-
 import (
 	"encoding/csv"
 	"fmt"
