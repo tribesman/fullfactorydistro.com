@@ -42,11 +42,6 @@ type Config struct {
 func main() {
 
 	fulltimeStart := time.Now()
-	// Загрузка настроек
-	var settings Config
-	_, err := toml.DecodeFile("config.toml", &settings)
-	checkError("Config", err)
-	fmt.Println(settings)
 
 	ex, err := os.Executable()
 	if err != nil {
@@ -60,6 +55,12 @@ func main() {
 	// 2 В файл и консоль
 	debug := 2
 	isProductPage := false
+
+	// Load settings
+	var settings Config
+	_, err = toml.DecodeFile(dir+"/config.toml", &settings)
+	checkError("Config", err)
+	fmt.Println(settings)
 
 	csvFile, err := os.Create(dir + "/products.csv")
 	checkError("Cannot create file", err)
