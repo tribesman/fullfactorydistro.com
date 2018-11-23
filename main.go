@@ -86,12 +86,11 @@ func main() {
 	}
 
 	// index pages
-	//pagesArr = append(pagesArr, "https://fullfactorydistro.com/collections/odyssey?sort_by=title-ascending")
+	pagesArr = append(pagesArr, "https://fullfactorydistro.com/collections/odyssey?sort_by=title-ascending")
 	pagesArr = append(pagesArr, "https://fullfactorydistro.com/collections/gsport?sort_by=title-ascending")
-	//pagesArr = append(pagesArr, "https://fullfactorydistro.com/collections/sunday?sort_by=title-ascending")
-	//pagesArr = append(pagesArr, "https://fullfactorydistro.com/collections/fairdale?sort_by=title-ascending")
+	pagesArr = append(pagesArr, "https://fullfactorydistro.com/collections/sunday?sort_by=title-ascending")
+	pagesArr = append(pagesArr, "https://fullfactorydistro.com/collections/fairdale?sort_by=title-ascending")
 
-	//currentPage := "https://fullfactorydistro.com/collections/odyssey/products/odyssey-antigram-v2-cassette-hub"
 	loginPage := "https://fullfactorydistro.com/account/login"
 	login := false
 
