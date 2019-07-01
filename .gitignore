@@ -12,4 +12,6 @@
 *.out
 
 config.toml
-build/*
+build/config.toml
+build/log.txt
+build/products.csv
